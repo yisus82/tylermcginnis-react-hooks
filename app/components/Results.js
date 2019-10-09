@@ -23,8 +23,6 @@ export default class Results extends React.Component {
       this.props.location.search.slice(1)
     );
 
-    console.log(playerOne, playerTwo);
-
     battle([playerOne, playerTwo])
       .then(players => {
         this.setState({
