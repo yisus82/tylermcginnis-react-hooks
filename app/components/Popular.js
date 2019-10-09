@@ -29,9 +29,8 @@ const Popular = () => {
   const fetchedLanguages = React.useRef([]);
 
   React.useEffect(() => {
-    if (fetchedLanguages.current.includes(selectedLanguage) === false) {
+    if (!fetchedLanguages.current.includes(selectedLanguage)) {
       fetchedLanguages.current.push(selectedLanguage);
-
       fetchPopularRepos(selectedLanguage)
         .then(repos => dispatch({ type: 'success', selectedLanguage, repos }))
         .catch(error => dispatch({ type: 'error', error }));
