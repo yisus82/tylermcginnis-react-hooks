@@ -1,0 +1,307 @@
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    'Helvetica Neue', sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-clear {
+  background: transparent;
+  border: none;
+}
+
+.nav-link {
+  color: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.header-lg {
+  font-size: 35px;
+  font-weight: 300;
+  margin: 20px;
+}
+
+.avatar {
+  border-radius: 3px;
+  display: block;
+  height: 150px;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.link {
+  color: rgb(187, 46, 31);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-list {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.card-list li {
+  align-items: center;
+  display: flex;
+  margin: 10px;
+}
+
+.card-list svg {
+  margin-right: 10px;
+}
+
+.card-list a {
+  color: inherit;
+  font-weight: 500;
+}
+
+.bg-light {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+}
+
+.card {
+  margin: 10px 0;
+  padding: 20px;
+  width: 250px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card img {
+  margin-bottom: 8px;
+}
+
+.header-sm {
+  font-size: 28px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+.instructions-container {
+  margin: 100px 0;
+}
+
+.container-sm {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.battle-instructions {
+  font-size: 25px;
+  padding: 0;
+}
+
+.battle-instructions li {
+  flex: 1;
+  min-width: 300px;
+}
+
+.battle-instructions svg {
+  border-radius: 3px;
+  padding: 40px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.player {
+  flex: 1;
+  margin: 0 20px;
+  padding: 10px;
+}
+
+.player-label {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 5px 0;
+}
+
+.player-inputs input {
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  flex: 2;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.player-inputs .input-light {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.player-inputs button {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.btn {
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  letter-spacing: 0.25em;
+  max-width: 200px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dark-btn {
+  background: #141414;
+  color: #e6e6e6;
+}
+
+.dark-btn:disabled {
+  background: #f2f2f2;
+  color: #c7c7c7;
+}
+
+.players-container {
+  margin: 100px 0;
+}
+
+.avatar-small {
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+}
+
+.player-info {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.player-info .link {
+  margin-left: 10px;
+}
+
+.btn-space {
+  margin: 40px auto;
+}
+
+.error {
+  color: rgb(255, 22, 22);
+  font-size: 20px;
+  margin: 50px 0;
+}
+
+.loading-text {
+  font-size: 35px;
+  left: 0;
+  margin-top: 20px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+.hover-container {
+  display: flex;
+  position: relative;
+}
+
+.hover-tooltip {
+  background-color: hsla(0, 0%, 20%, 0.9);
+  box-sizing: border-box;
+  border-radius: 3px;
+  bottom: 100%;
+  color: #fff;
+  font-size: 14px;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  position: absolute;
+  text-align: center;
+  width: 160px;
+}
+
+.dark {
+  background: #1c2022;
+  color: #dadada;
+  min-height: 100%;
+}
+
+.bg-dark {
+  background: rgb(36, 40, 42);
+  border-radius: 3px;
+}
+
+.player-inputs .input-dark {
+  background: rgba(0, 0, 0, 0.3);
+  color: #dadada;
+}
+
+.light-btn {
+  background: #aaa8a8;
+  color: #000;
+}
+
+.light-btn:disabled {
+  background: #292929;
+  color: #4a4a4a;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
