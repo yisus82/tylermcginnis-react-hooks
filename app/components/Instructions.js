@@ -4,7 +4,7 @@ import { ThemeConsumer } from '../contexts/theme';
 
 const Instructions = () => (
   <ThemeConsumer>
-    {({ theme }) => (
+    {theme => (
       <div className="instructions-container">
         <h1 className="center-text header-lg">Instructions</h1>
         <ol className="container-sm grid center-text battle-instructions">

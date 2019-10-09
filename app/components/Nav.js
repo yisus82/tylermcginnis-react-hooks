@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { ThemeConsumer } from '../contexts/theme';
 
@@ -6,9 +7,9 @@ const activeStyle = {
   color: 'rgb(187, 46, 31)',
 };
 
-const Nav = () => (
+const Nav = ({ toggleTheme }) => (
   <ThemeConsumer>
-    {({ theme, toggleTheme }) => (
+    {theme => (
       <nav className="row space-between">
         <ul className="row nav">
           <li>
@@ -43,5 +44,9 @@ const Nav = () => (
     )}
   </ThemeConsumer>
 );
+
+Nav.propTypes = {
+  toggleTheme: PropTypes.func.isRequired,
+};
 
 export default Nav;

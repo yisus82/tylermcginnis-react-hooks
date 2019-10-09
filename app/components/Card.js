@@ -4,7 +4,7 @@ import { ThemeConsumer } from '../contexts/theme';
 
 const Card = ({ header, image, subheader, link, text, children }) => (
   <ThemeConsumer>
-    {({ theme }) => (
+    {theme => (
       <div className={`card bg-${theme}`}>
         <h4 className="header-lg center-text">{header}</h4>
         <img className="avatar" src={image} alt={text} />

@@ -5,7 +5,7 @@ import { ThemeConsumer } from '../contexts/theme';
 
 const PlayerPreview = ({ username, onReset, label }) => (
   <ThemeConsumer>
-    {({ theme }) => (
+    {theme => (
       <div className="column player">
         <h3 className="player-label">{label}</h3>
         <div className={`row bg-${theme}`}>
