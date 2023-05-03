@@ -61,7 +61,7 @@ const Results = ({ location }) => {
           player={winner}
         />
         <UserCard
-          label={winner.score === loser.score ? 'Tie' : 'Winner'}
+          label={winner.score === loser.score ? 'Tie' : 'Loser'}
           player={loser}
         />
       </div>
